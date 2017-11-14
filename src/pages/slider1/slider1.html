@@ -1,0 +1,14 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Slider 1</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <input type="range" (change)="onChange($event)">
+  <br>
+  <h2>{{currentValue}}</h2>
+</ion-content>

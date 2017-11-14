@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Slider 2</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <canvas #myCanvas></canvas>
+  <input #range class="test" type="range" (input)="onChange($event)">
+  <button ion-button (click)="adjustValue(-2, range)">left</button>
+  <button ion-button (click)="adjustValue(2, range)">right</button>
+  <br>
+  <ion-label>Line</ion-label>
+  <ion-checkbox (ionChange)="updateDisplay($event)"></ion-checkbox>
+  <br>
+  <h2>{{currentVal}}</h2>
+</ion-content>

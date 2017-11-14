@@ -1,0 +1,14 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Teken VAS</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <canvas #myCanvas (touchmove)="onTouchMove($event)"></canvas>
+  <h2>{{collisionPoint}}%</h2>
+  <button ion-button (click)="resetCanvas()">Reset</button>
+</ion-content>
