@@ -8,7 +8,7 @@
 
 
 <ion-content>
-  <canvas #myCanvas (touchmove)="onTouchMove($event)"></canvas>
+  <canvas #myCanvas (touchmove)="onTouchMove($event)" (tochend)="onTouchStop()"></canvas>
   <h2>{{collisionPoint}}%</h2>
   <button ion-button (click)="resetCanvas()">Reset</button>
 </ion-content>
